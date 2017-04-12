@@ -4,6 +4,6 @@ namespace PublicHolidaysCalculator
 {
     public interface IPublicHolidaysCalculator
     {
-        IEnumerable<Date> GetMovingPublicHolidays(int year);
+        IEnumerable<Date> GetPublicHolidays(int year);
     }
 }

@@ -29,7 +29,7 @@
                     Console.WriteLine("This is no year !");
                     continue;
                 }
-                var result = new FrenchPublicHolidaysCalculator().GetMovingPublicHolidays(year);
+                var result = new FrenchPublicHolidaysCalculator().GetPublicHolidays(year);
                 foreach (var item in result)
                 {
                     Console.WriteLine(item.ToString("D"));
@@ -57,7 +57,7 @@
                     Console.WriteLine("This is no year !");
                     continue;
                 }
-                var result = new WorkingDaysCalculator(new FrenchPublicHolidaysCalculator(), year).GetWorkingDaysByMonth(year, month);
+                var result = new WorkingDaysCalculator(new FrenchPublicHolidaysCalculator()).GetWorkingDaysByMonth(year, month);
                 Console.WriteLine($"{result} working days in {month}/{year}");
             }
         }

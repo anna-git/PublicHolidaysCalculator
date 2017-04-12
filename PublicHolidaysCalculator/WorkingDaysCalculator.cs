@@ -1,20 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace PublicHolidaysCalculator
+﻿namespace PublicHolidaysCalculator
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
     public class WorkingDaysCalculator : IWorkingDaysCalculator
     {
-        private readonly Lazy<IEnumerable<Date>> _publicHolidays;
+        private readonly IPublicHolidaysCalculator _publicDaysCalculator;
+        private readonly IDictionary<int, IEnumerable<Date>> _publicHolidays;
 
-        public WorkingDaysCalculator(IPublicHolidaysCalculator publicDaysCalculator, int year)
+        public WorkingDaysCalculator(IPublicHolidaysCalculator publicDaysCalculator)
         {
-            _publicHolidays = new Lazy<IEnumerable<Date>>(() => publicDaysCalculator.GetMovingPublicHolidays(year));
+            _publicDaysCalculator = publicDaysCalculator;
+            _publicHolidays = new Dictionary<int, IEnumerable<Date>>();
         }
 
         public int GetWorkingDaysByMonth(int year, int month, bool workingOnSaturday = false)
         {
+            if (!_publicHolidays.ContainsKey(year))
+            {
+                _publicHolidays[year] = _publicDaysCalculator.GetPublicHolidays(year);
+            }
+            var publicHolidays = _publicHolidays[year];
             var currentDay = new DateTime(year, month, 01);
             var currentMonth = month;
             var workingDays = 0;
@@ -22,8 +28,8 @@ namespace PublicHolidaysCalculator
             {
                 //if neither sunday, neither saturday (not working), neither public holiday
                 if (currentDay.DayOfWeek != DayOfWeek.Sunday
-                    && (currentDay.DayOfWeek != DayOfWeek.Saturday && !workingOnSaturday)
-                    && !_publicHolidays.Value.Any(h => h.Month == month && h.Day == currentDay.Day))
+                    && currentDay.DayOfWeek != DayOfWeek.Saturday && !workingOnSaturday
+                    && !publicHolidays.Any(h => h.Month == month && h.Day == currentDay.Day))
                 {
                     workingDays++;
                 }

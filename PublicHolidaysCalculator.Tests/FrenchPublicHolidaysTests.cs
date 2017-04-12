@@ -33,7 +33,7 @@
         {
             var calculator = new FrenchPublicHolidaysCalculator();
             var datas = GetPholidaysDatas(year);
-            var publicHolidays = calculator.GetMovingPublicHolidays(year);
+            var publicHolidays = calculator.GetPublicHolidays(year);
             Assert.All(datas, e => publicHolidays.Contains(e));
         }
     }

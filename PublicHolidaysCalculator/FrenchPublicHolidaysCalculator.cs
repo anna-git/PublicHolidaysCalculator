@@ -14,7 +14,7 @@
             new MonthDay(11, 11),
             new MonthDay(12, 25) };
 
-        public IEnumerable<Date> GetMovingPublicHolidays(int year)
+        public IEnumerable<Date> GetPublicHolidays(int year)
         {
             var allDates = FixedPublicHolidays.Select(e => e.ToDate(year)).ToList();
             var easterSunday = EasterSunday(year).ToDateTime(year);

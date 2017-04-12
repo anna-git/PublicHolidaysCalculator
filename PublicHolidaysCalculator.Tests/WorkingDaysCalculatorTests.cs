@@ -1,6 +1,5 @@
 ﻿namespace PublicHolidaysCalculator.Tests
 {
-    using System;
     using Xunit;
     public class WorkingDaysCalculatorTests
     {
@@ -19,7 +18,7 @@
         [InlineData(2017, 12, 20)]
         public void Test(int year, int month, int expectedWorkingDays)
         {
-            var calculator = new WorkingDaysCalculator(new FrenchPublicHolidaysCalculator(), year);
+            var calculator = new WorkingDaysCalculator(new FrenchPublicHolidaysCalculator());
             var workingDays = calculator.GetWorkingDaysByMonth(year, month);
             Assert.Equal(expectedWorkingDays, workingDays);
         }

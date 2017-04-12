@@ -4,7 +4,7 @@
     using System.Linq;
     public class FrenchPublicHolidaysCalculator : IPublicHolidaysCalculator
     {
-        static readonly MonthDay[] fixedPublicHolidays = new MonthDay[] {
+        static readonly MonthDay[] FixedPublicHolidays = {
             new MonthDay(01, 01),
             new MonthDay(05, 01),
             new MonthDay(05, 08),
@@ -16,7 +16,7 @@
 
         public IEnumerable<Date> GetMovingPublicHolidays(int year)
         {
-            var allDates = fixedPublicHolidays.Select(e => e.ToDate(year)).ToList();
+            var allDates = FixedPublicHolidays.Select(e => e.ToDate(year)).ToList();
             var easterSunday = EasterSunday(year).ToDateTime(year);
             var easterMonday = easterSunday.AddDays(1);
             var ascensionThursday = easterSunday.AddDays(39);

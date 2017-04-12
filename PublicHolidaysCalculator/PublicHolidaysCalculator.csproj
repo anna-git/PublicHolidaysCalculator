@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard1.6</TargetFramework>
+		<TargetFrameworks>netstandard16;net452</TargetFrameworks>
 		<PackageId>PublicHolidaysCalculator</PackageId>
-		<PackageVersion>1.0.0</PackageVersion>
+		<PackageVersion>1.0.1</PackageVersion>
 		<Authors>YOUR_NAME</Authors>
 		<Description>Public holidays calculator (french implementation)</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>

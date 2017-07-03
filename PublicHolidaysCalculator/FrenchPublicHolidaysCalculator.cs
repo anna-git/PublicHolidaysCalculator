@@ -21,7 +21,6 @@
             var easterMonday = easterSunday.AddDays(1);
             var ascensionThursday = easterSunday.AddDays(39);
             var pentecoteMonday = easterSunday.AddDays(50);
-
             allDates.Add(easterMonday.ToDate()); //lundi de pâques
             allDates.Add(ascensionThursday.ToDate()); //jeudi ascension 
             allDates.Add(pentecoteMonday.ToDate()); //lundi pentecote

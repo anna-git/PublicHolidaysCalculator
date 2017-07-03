@@ -3,8 +3,8 @@
 	<PropertyGroup>
 		<TargetFrameworks>netstandard16;net452</TargetFrameworks>
 		<PackageId>PublicHolidaysCalculator</PackageId>
-		<PackageVersion>1.0.1</PackageVersion>
-		<Authors>YOUR_NAME</Authors>
+		<PackageVersion>1.0.2</PackageVersion>
+		<Authors>Anna</Authors>
 		<Description>Public holidays calculator (french implementation)</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageReleaseNotes>First release</PackageReleaseNotes>

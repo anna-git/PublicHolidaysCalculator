@@ -8,12 +8,10 @@ namespace PublicHolidaysCalculator
     {
         public Date(int year, int month, int day)
         {
-            if (month > 12)
-                throw new ArgumentOutOfRangeException(nameof(month));
+            DateTime = new DateTime(year, month, day);
             Month = month;
             Day = day;
             Year = year;
-            DateTime = new DateTime(Year, Month, Day);
         }
         public int Year { get; }
         public int Month { get; }

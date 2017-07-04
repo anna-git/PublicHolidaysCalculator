@@ -1,4 +1,4 @@
-﻿namespace PublicHolidaysCalculator
+﻿namespace SimpleDate.Model
 {
     using System;
 

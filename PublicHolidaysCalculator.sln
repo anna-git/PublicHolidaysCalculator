@@ -1,19 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.10
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicHolidaysCalculator", "PublicHolidaysCalculator\PublicHolidaysCalculator.csproj", "{6A7E8FAC-3509-48FD-A2B2-B6D59DA55221}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicHolidaysCalculator", "PublicHolidaysCalculator\PublicHolidaysCalculator.csproj", "{6A7E8FAC-3509-48FD-A2B2-B6D59DA55221}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicHolidaysCalculator.Tester", "PublicHolidaysCalculatorTester\PublicHolidaysCalculator.Tester.csproj", "{83027D42-0338-40E6-90DF-19D2C7DA43CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicHolidaysCalculator.Tester", "PublicHolidaysCalculatorTester\PublicHolidaysCalculator.Tester.csproj", "{83027D42-0338-40E6-90DF-19D2C7DA43CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicHolidaysCalculator.Tests", "PublicHolidaysCalculator.Tests\PublicHolidaysCalculator.Tests.csproj", "{24BD72BC-EC86-4968-B5BC-0863C42ACADA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicHolidaysCalculator.Tests", "PublicHolidaysCalculator.Tests\PublicHolidaysCalculator.Tests.csproj", "{24BD72BC-EC86-4968-B5BC-0863C42ACADA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{FB4C1852-D1F3-45D7-A773-0A15C7860EF6}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDate.Model", "SimpleDate.Model\SimpleDate.Model.csproj", "{76F4B9A5-A96D-43BE-8AF4-6995F5A3C6DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{24BD72BC-EC86-4968-B5BC-0863C42ACADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24BD72BC-EC86-4968-B5BC-0863C42ACADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24BD72BC-EC86-4968-B5BC-0863C42ACADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F4B9A5-A96D-43BE-8AF4-6995F5A3C6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F4B9A5-A96D-43BE-8AF4-6995F5A3C6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F4B9A5-A96D-43BE-8AF4-6995F5A3C6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F4B9A5-A96D-43BE-8AF4-6995F5A3C6DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

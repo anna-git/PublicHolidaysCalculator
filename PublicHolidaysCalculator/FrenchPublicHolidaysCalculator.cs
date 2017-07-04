@@ -2,6 +2,8 @@
 {
     using System.Collections.Generic;
     using System.Linq;
+    using SimpleDate.Model;
+
     public class FrenchPublicHolidaysCalculator : IPublicHolidaysCalculator
     {
         static readonly MonthDay[] FixedPublicHolidays = {

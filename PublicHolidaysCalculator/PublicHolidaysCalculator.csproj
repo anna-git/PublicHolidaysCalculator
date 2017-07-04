@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFrameworks>netstandard16;net452</TargetFrameworks>
 		<PackageId>PublicHolidaysCalculator</PackageId>
-		<PackageVersion>1.0.4</PackageVersion>
+		<PackageVersion>1.0.5</PackageVersion>
 		<Authors>Anna</Authors>
 		<Description>Public holidays calculator (french implementation provided)</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -12,6 +12,9 @@
 	</PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.ValueTuple" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleDate.Model\SimpleDate.Model.csproj" />
   </ItemGroup>
 
 </Project>

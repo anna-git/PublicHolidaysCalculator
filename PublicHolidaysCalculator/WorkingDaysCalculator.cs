@@ -1,5 +1,6 @@
 ﻿namespace PublicHolidaysCalculator
 {
+    using SimpleDate.Model;
     using System;
     using System.Collections.Generic;
     using System.Linq;

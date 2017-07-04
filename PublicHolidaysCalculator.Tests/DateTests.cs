@@ -1,6 +1,7 @@
 ﻿namespace PublicHolidaysCalculator.Tests
 {
     using System;
+    using SimpleDate.Model;
     using Xunit;
 
     public class DateTests

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PublicHolidaysCalculator\PublicHolidaysCalculator.csproj" />
+    <ProjectReference Include="..\SimpleDate.Model\SimpleDate.Model.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,7 @@
 ﻿namespace PublicHolidaysCalculator.Tester
 {
     using System;
+    using System.Globalization;
 
     class Program
     {
@@ -9,7 +10,7 @@
             try
             {
                 Console.OutputEncoding = System.Text.Encoding.Unicode;
-                WriteWorkingDaysAMonth();
+                WriteDayOffOrNot();
             }
             catch(Exception e)
             {
@@ -59,6 +60,24 @@
                 }
                 var result = new WorkingDaysCalculator(new FrenchPublicHolidaysCalculator()).GetWorkingDaysByMonth(year, month);
                 Console.WriteLine($"{result} working days in {month}/{year}");
+            }
+        }
+
+        private static void WriteDayOffOrNot()
+        {
+            while (true)
+            {
+                Console.WriteLine("Which date do you wanna try ?");
+                var wdate = Console.ReadLine();
+                var res = DateTime.TryParse(wdate, out DateTime date);
+                if (!res)
+                {
+                    Console.WriteLine("This is no date !");
+                    continue;
+                }
+             
+                var result = new WorkingDaysCalculator(new FrenchPublicHolidaysCalculator()).IsDayOff(date);
+                Console.WriteLine($"{result}");
             }
         }
     }

@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFrameworks>netstandard16;net452</TargetFrameworks>
 		<PackageId>PublicHolidaysCalculator</PackageId>
-		<PackageVersion>1.0.5</PackageVersion>
+		<PackageVersion>1.0.7</PackageVersion>
 		<Authors>Anna Yafi</Authors>
 		<Description>Public holidays calculator (french implementation provided)</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>

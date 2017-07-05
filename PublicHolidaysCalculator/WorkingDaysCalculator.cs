@@ -1,6 +1,7 @@
 ﻿namespace PublicHolidaysCalculator
 {
     using System;
+    using System.Collections.Concurrent;
     using System.Collections.Generic;
     using System.Linq;
     using GeekLearning.Domain;
@@ -13,7 +14,7 @@
         public WorkingDaysCalculator(IPublicHolidaysCalculator publicHolidaysCalculator)
         {
             _publicHolidaysCalculator = publicHolidaysCalculator;
-            _publicHolidays = new Dictionary<int, IEnumerable<Date>>();
+            _publicHolidays = new ConcurrentDictionary<int, IEnumerable<Date>>();
         }
 
         public int GetWorkingDaysByMonth(int year, int month, bool workingOnSaturday = false)

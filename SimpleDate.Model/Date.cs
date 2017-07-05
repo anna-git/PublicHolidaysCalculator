@@ -1,5 +1,4 @@
-﻿
-namespace SimpleDate.Model
+﻿namespace SimpleDate.Model
 {
     using System;
     using System.Globalization;

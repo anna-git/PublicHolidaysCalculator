@@ -2,5 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard16;net452</TargetFrameworks>
+    <PackageVersion>1.0.5</PackageVersion>
+    <Authors>Anna Yafi</Authors>
   </PropertyGroup>
 </Project>

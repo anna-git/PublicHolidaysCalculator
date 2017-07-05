@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
     using System.Linq;
-    using SimpleDate.Model;
+    using GeekLearning.Domain;
 
     public class FrenchPublicHolidaysCalculator : IPublicHolidaysCalculator
     {

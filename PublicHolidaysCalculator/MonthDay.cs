@@ -1,10 +1,11 @@
-﻿namespace SimpleDate.Model
+﻿namespace PublicHolidaysCalculator
 {
     using System;
+    using GeekLearning.Domain;
 
     public struct MonthDay
     {
-        public MonthDay(int month, int day)
+        internal MonthDay(int month, int day)
         {
             Month = month;
             Day = day;
@@ -14,6 +15,6 @@
 
         public DateTime ToDateTime(int year) => new DateTime(year, Month, Day);
 
-        public Date ToDate(int year) => new Date(year, Month, Day);
+        internal Date ToDate(int year) => new Date(year, Month, Day);
     }
 }

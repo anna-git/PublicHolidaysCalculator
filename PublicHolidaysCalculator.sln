@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicHolidaysCalculator", "PublicHolidaysCalculator\PublicHolidaysCalculator.csproj", "{6A7E8FAC-3509-48FD-A2B2-B6D59DA55221}"
 EndProject
@@ -12,10 +12,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{FB4C1852-D1F3-45D7-A773-0A15C7860EF6}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		..\EzPortage\NuGet.Config = ..\EzPortage\NuGet.Config
 		README.md = README.md
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDate.Model", "SimpleDate.Model\SimpleDate.Model.csproj", "{76F4B9A5-A96D-43BE-8AF4-6995F5A3C6DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +34,6 @@ Global
 		{24BD72BC-EC86-4968-B5BC-0863C42ACADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24BD72BC-EC86-4968-B5BC-0863C42ACADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24BD72BC-EC86-4968-B5BC-0863C42ACADA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76F4B9A5-A96D-43BE-8AF4-6995F5A3C6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76F4B9A5-A96D-43BE-8AF4-6995F5A3C6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76F4B9A5-A96D-43BE-8AF4-6995F5A3C6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76F4B9A5-A96D-43BE-8AF4-6995F5A3C6DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

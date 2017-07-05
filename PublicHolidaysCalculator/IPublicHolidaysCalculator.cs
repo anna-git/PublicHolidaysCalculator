@@ -2,7 +2,7 @@
 
 namespace PublicHolidaysCalculator
 {
-    using SimpleDate.Model;
+    using GeekLearning.Domain;
 
     public interface IPublicHolidaysCalculator
     {

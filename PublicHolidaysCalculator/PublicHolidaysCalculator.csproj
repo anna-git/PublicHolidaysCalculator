@@ -4,17 +4,15 @@
 		<TargetFrameworks>netstandard16;net452</TargetFrameworks>
 		<PackageId>PublicHolidaysCalculator</PackageId>
 		<PackageVersion>1.0.5</PackageVersion>
-		<Authors>Anna</Authors>
+		<Authors>Anna Yafi</Authors>
 		<Description>Public holidays calculator (french implementation provided)</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageReleaseNotes>First release</PackageReleaseNotes>
 		<PackageProjectUrl>https://github.com/annayafi/PublicHolidaysCalculator</PackageProjectUrl>
 	</PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="GeekLearning.Domain.Primitives" Version="0.3.0-alpha0014" />
     <PackageReference Include="System.ValueTuple" Version="4.3.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SimpleDate.Model\SimpleDate.Model.csproj" />
   </ItemGroup>
 
 </Project>

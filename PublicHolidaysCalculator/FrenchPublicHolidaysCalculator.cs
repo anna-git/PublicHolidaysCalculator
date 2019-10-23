@@ -1,8 +1,8 @@
 ﻿namespace PublicHolidaysCalculator
 {
+    using GeekLearning.Domain;
     using System.Collections.Generic;
     using System.Linq;
-    using GeekLearning.Domain;
 
     public class FrenchPublicHolidaysCalculator : IPublicHolidaysCalculator
     {
